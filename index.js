@@ -1,7 +1,11 @@
-module.exports = {
+export default {
 	add(...params) {
-		params.reduce((prev, current) => {
+		return params.reduce((prev, current) => {
 			return prev + current;
 		});
 	},
 };
+
+export function log(...params) {
+	console.log(...params);
+}
